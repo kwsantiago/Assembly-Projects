@@ -1,0 +1,1 @@
+Command to run: ```qemu-system-x86_64 --nographic --curses bootsector.bin```
