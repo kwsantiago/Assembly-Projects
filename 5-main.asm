@@ -4,17 +4,19 @@
 
 mov bx, HELLO_MSG
 call print
-
 call print_newline
 
 mov bx, GOODBYE_MSG
 call print
-
 call print_newline
+
+mov dx, 0x12fe
+call print_hex
 
 jmp $ ; hang
 
 %include "5-print.asm"
+%include "5-print_hex.asm"
 
 HELLO_MSG:
     db 'Hello, World!', 0
