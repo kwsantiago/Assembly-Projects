@@ -21,7 +21,7 @@ disk_load:
 disk_error:
     mov bx, DISK_ERROR
     call print
-    call print_newline
+    call print_nl
     mov dh, ah
     call print_hex 
     jmp disk_loop
