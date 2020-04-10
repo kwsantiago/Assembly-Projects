@@ -8,9 +8,9 @@
     call switch_to_pm
     jmp $ ; this will actually never be executed
 
-%include "5-print.asm"
-%include "9-32bit_GDT.asm"
-%include "8-32bit_print.asm"
+%include "../05-Print-with-Hex/5-print.asm"
+%include "../09-32bit-GDT/9-32bit_GDT.asm"
+%include "../08-32bit Print/8-32bit_print.asm"
 %include "10-32bit_switch.asm"
 
 [bits 32]
